@@ -6,4 +6,44 @@
 :root {
   --main-color: #14b789;
   --secondary-color: #535da1;
+  --p-color:#717275;
+  --font-size:48px;
+}
+
+
+
+
+.secthion-page{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section-title-wrap{
+  background-color: var(--main-color);
+}
+
+
+
+.avatar-text{
+  font-size: var(--font-size);
+
+}
+
+.avatar-image{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 30px;
+  object-fit: cover;
+}
+
+
+
+.about-Abdullah{
+  font-size: 30px;
+  color: black;
+}
+
+.p-Abdullah{
+  color: var(--p-color);
+  font-size: 18px;
+  font-weight: 400;
 }

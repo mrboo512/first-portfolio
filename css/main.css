@@ -11,8 +11,8 @@
     --text-color: #717275;
     --border-color: #e9eaeb;
     --main-transition: 0.3s;
-    --p-color: #717275;
     --font-size: 48px;
+    --main-section-padding: 120px 0;
 }
 
 ::selection {
@@ -33,6 +33,7 @@ input,
 textarea {
     border: none;
     outline: none;
+    background-color: transparent;
 }
 
 /* Components */
@@ -86,7 +87,6 @@ textarea {
     margin-right: 30px;
     object-fit: cover;
 }
-
 
 /* Abdullah Elshebrawy: style wrapper and the background */
 .wrapper {
@@ -274,8 +274,24 @@ header.white .navbar .tel-number {
 
 /* Abdullah mohammed : about section */
 .secthion-page {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: var(
+        --main-section-padding
+    ); /* edit by Abdullah Elshebrawy: use variables */
+}
+
+.section-title-wrap {
+    background-color: var(--main-color);
+}
+
+.avatar-text {
+    font-size: var(--font-size);
+}
+
+.avatar-image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    object-fit: cover;
 }
 
 .about-Abdullah {
@@ -284,22 +300,22 @@ header.white .navbar .tel-number {
 }
 
 .p-Abdullah {
-    color: var(--p-color);
+    color: var(--text-color);
     font-size: 18px;
     font-weight: 400;
 }
 
-/* Abdullah Elshebrawy: Create header and banner section */
-.info {
-    padding: 100px 0;
+/* Abdullah Elshebrawy: Create info section */
+.info-sec {
+    padding: var(--main-section-padding);
     background-color: var(--main-bg-color);
 }
-.info .information {
+.info-sec .information {
     border: 1px solid var(--border-color);
     border-radius: 20px;
     overflow: hidden;
 }
-.info .title {
+.info-sec .title {
     font-size: 32px;
     color: #000;
     font-weight: bold;
@@ -307,38 +323,124 @@ header.white .navbar .tel-number {
     padding: 12px 30px;
     border-bottom: 1px solid var(--border-color);
 }
-.info table th,
-.info table td {
+.info-sec table th,
+.info-sec table td {
     font-size: 18px;
     padding: 12px 30px;
     border: none;
 }
-.info table th {
+.info-sec table th {
     color: var(--main-color);
     border-right: 1px solid var(--border-color);
 }
-.info table td {
+.info-sec table td {
     color: var(--text-color);
     overflow-wrap: anywhere;
 }
-.info .statistics .col {
+.info-sec .statistics .col {
     padding: 0;
 }
-.info .statistics .box {
+.info-sec .statistics .box {
     padding: 8px 12px;
     border-width: 0 !important;
 }
 @media (min-width: 768px) {
-    .info .statistics .box.gap-md-start {
-        padding-left: 48px;
+    .info-sec .statistics .box {
         border-width: 1px !important;
     }
+    .info-sec .statistics .box.gap-md-start {
+        padding-left: 48px;
+    }
 }
-.info .statistics .box .number {
+.info-sec .statistics .box .number {
     font-size: 62px;
     color: #212529;
 }
-.info .statistics .box .label {
+.info-sec .statistics .box .label {
     font-size: 18px;
     color: var(--main-color);
+}
+/* Abdullah Elshebrawy: Create projects section */
+.projects {
+    padding: var(--main-section-padding);
+}
+.projects .box {
+    background-color: var(--main-bg-color);
+    padding: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.projects .box,
+.projects .box img {
+    border-radius: 20px;
+    transition: 0.6s;
+}
+.projects .box:hover {
+    border: 1px solid var(--main-color);
+}
+.projects .box .category-title {
+    font-size: 12px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin: 0;
+}
+.projects .box .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+.projects .box img {
+    border-radius: 20px;
+    transform: rotate(15deg) translateY(80px);
+}
+.projects .box:hover img {
+    transform: rotate(0deg);
+}
+
+/* Abdullah Elshebrawy: Create the gallery sldier */
+.gallery-slider {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.gallery-slider.active {
+    display: block;
+}
+body.gallery-active {
+    overflow: hidden;
+}
+.gallery-slider .image {
+    height: fit-content;
+    width: fit-content;
+    transform: 0.5s;
+    position: absolute;
+}
+.gallery-slider.active .image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.gallery-slider .image img {
+    max-height: 70vh;
+    max-width: 75vw;
+}
+.gallery-slider .image .close-btn,
+.gallery-slider .image .info,
+.gallery-slider .move {
+    font-size: 20px;
+    color: white;
+    /* cursor: alias; */
+}
+.gallery-slider .move {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+}
+.gallery-slider .move.next-btn {
+    right: 0;
+}
+.gallery-slider .move.prev-btn {
+    left: 0;
 }

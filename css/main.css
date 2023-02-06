@@ -73,6 +73,21 @@ textarea {
     transform: translateY(0%) rotate(-45deg);
 }
 
+.main-heading {
+    background-color: var(--main-color);
+}
+
+.main-heading .avatar-text {
+    font-size: var(--font-size);
+}
+
+.main-heading .avatar-image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
 /* Abdullah Elshebrawy: style wrapper and the background */
 .wrapper {
     background-color: var(--main-color);
@@ -345,7 +360,6 @@ header.white .navbar .tel-number {
     font-size: 18px;
     color: var(--main-color);
 }
-
 /* Abdullah Elshebrawy: Create projects section */
 .projects {
     padding: var(--main-section-padding);

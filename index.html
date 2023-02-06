@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="./css/all.min.css" />
 
         <link rel="stylesheet" type="text/css" href="/css/main.css" />
-        
+
         <!-- Abdullah Elshebrawy: Added bootstrap from cdnJs -->
         <link
             rel="stylesheet"
@@ -30,27 +30,35 @@
     </head>
 
     <body data-bs-spy="scroll" data-bs-target="#navbar">
-        <div class="gallery-slider position-fixed top-0 start-0 w-100 h-100" id='gallery-slider'>
-            <button class="move prev-btn p-5" id='prev-btn'>
-                <i class="fas fa-angle-left" id='prev-btn'></i>
+        <div
+            class="gallery-slider position-fixed top-0 start-0 w-100 h-100"
+            id="gallery-slider"
+        >
+            <button class="move prev-btn p-5" id="prev-btn">
+                <i class="fas fa-angle-left" id="prev-btn"></i>
             </button>
             <div class="image">
                 <div class="d-flex justify-content-end">
-                    <button class="close-btn p-3 pe-0" id='close-btn'>
+                    <button class="close-btn p-3 pe-0" id="close-btn">
                         <i class="fa-solid fa-x"></i>
                     </button>
                 </div>
-                <img src="./images/projects/nikhil-KO4io-eCAXA-unsplash.jpg" alt="image" id="image">
+                <img
+                    src="./images/projects/nikhil-KO4io-eCAXA-unsplash.jpg"
+                    alt="image"
+                    id="image"
+                />
                 <div class="info text-end">
                     <span class="index"></span>
                     of
                     <span class="length"></span>
                 </div>
             </div>
-            <button class="move next-btn p-5" id='next-btn'>
-                <i class="fas fa-angle-right" id='next-btn'></i>
+            <button class="move next-btn p-5" id="next-btn">
+                <i class="fas fa-angle-right" id="next-btn"></i>
             </button>
         </div>
+
         <div class="wrapper position-relative" id="home">
             <div class="background-purple">
                 <img src="./images/bg.svg" alt="" />
@@ -212,12 +220,8 @@
                     <div class="col-lg-6 col-12 mt-5 mt-lg-0">
                         <div class="about-head">
                             <div
-                                class="section-title-wrap d-flex justify-content-end align-items-center mb-4 rounded"
+                                class="main-heading d-flex justify-content-center align-items-center mb-4 rounded"
                             >
-                                <h2 class="avatar-text text-white me-4 mb-0">
-                                    My Story
-                                </h2>
-
                                 <img
                                     src="images/zamalek-photo.jpg"
                                     class="avatar-image rounded-circle"
@@ -225,6 +229,10 @@
                                     width="160px"
                                     height="160px"
                                 />
+
+                                <h2 class="avatar-text text-white me-4 mb-0">
+                                    My Story
+                                </h2>
                             </div>
 
                             <h3 class="about-Abdullah">
@@ -313,25 +321,26 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Abdullah Elshebrawy: info section -->
         <div class="projects">
             <div class="container">
                 <div class="row mb-4">
                     <div class="col-4"></div>
                     <div
-                    class="section-title-wrap col-8 d-flex justify-content-end align-items-center mb-4 rounded"
-                >
-                    <h2 class="avatar-text text-white me-4 mb-0">Projects</h2>
-
-                    <img
-                        src="images/white-desk-work-study-aesthetics.jpg"
-                        class="avatar-image rounded-circle"
-                        alt=""
-                        width="160px"
-                        height="160px"
-                    />
-                </div>
+                        class="main-heading col-8 d-flex justify-content-center align-items-center mb-4 rounded"
+                    >
+                        <img
+                            src="images/white-desk-work-study-aesthetics.jpg"
+                            class="avatar-image rounded-circle"
+                            alt=""
+                            width="160px"
+                            height="160px"
+                        />
+                        <h2 class="avatar-text text-white me-4 mb-0">
+                            Projects
+                        </h2>
+                    </div>
                 </div>
                 <div class="row gy-3">
                     <div class="col-sm-12 col-md-6 col-lg-4">
@@ -369,6 +378,7 @@
         </div>
 
         <script src="./js/gallery-slider.js"></script>
+
         <!-- Abdullah Elshebrawy: Added main.js -->
         <script src="./js/mainjs.js"></script>
         <!-- Abdullah Elshebrawy: Added bootstrap from cdnJs -->

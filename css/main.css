@@ -5,16 +5,15 @@
     box-sizing: border-box;
 }
 :root {
-  --main-color: #14b789;
-  --secondary-color: #535da1;
-  --main-bg-color: #f9f9f9;
-  --text-color: #717275;
-  --border-color: #e9eaeb;
-  --main-transition: 0.3s;
-  --p-color:#717275;
-  --font-size:48px;
+    --main-color: #14b789;
+    --secondary-color: #535da1;
+    --main-bg-color: #f9f9f9;
+    --text-color: #717275;
+    --border-color: #e9eaeb;
+    --main-transition: 0.3s;
+    --p-color: #717275;
+    --font-size: 48px;
 }
-
 
 ::selection {
     background-color: var(--main-color);
@@ -35,7 +34,6 @@ textarea {
     border: none;
     outline: none;
 }
-
 
 /* Components */
 .nav-toggler .toggler-icon {
@@ -73,6 +71,22 @@ textarea {
 .nav-toggler .toggler-icon[aria-expanded="true"] span:nth-child(3) {
     transform: translateY(0%) rotate(-45deg);
 }
+
+.main-heading {
+    background-color: var(--main-color);
+}
+
+.main-heading .avatar-text {
+    font-size: var(--font-size);
+}
+
+.main-heading .avatar-image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
 
 /* Abdullah Elshebrawy: style wrapper and the background */
 .wrapper {
@@ -259,42 +273,21 @@ header.white .navbar .tel-number {
 }
 
 /* Abdullah mohammed : about section */
-.secthion-page{
+.secthion-page {
     padding-top: 120px;
     padding-bottom: 120px;
-  }
-  
-.section-title-wrap{
-    background-color: var(--main-color);
-  }
-  
-  
-  
-.avatar-text{
-    font-size: var(--font-size);
-  
-  }
-  
-.avatar-image{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-    object-fit: cover;
-  }
-  
-  
-  
-  .about-Abdullah{
+}
+
+.about-Abdullah {
     font-size: 30px;
     color: black;
-  }
-  
-.p-Abdullah{
+}
+
+.p-Abdullah {
     color: var(--p-color);
     font-size: 18px;
     font-weight: 400;
 }
-    
 
 /* Abdullah Elshebrawy: Create header and banner section */
 .info {
@@ -349,10 +342,3 @@ header.white .navbar .tel-number {
     font-size: 18px;
     color: var(--main-color);
 }
-
-
-
-
-
-
-

@@ -87,6 +87,13 @@ textarea {
     margin-right: 30px;
     object-fit: cover;
 }
+.border-hover {
+    border: 2px solid var(--border-color);
+    transition: .5s;
+}
+.border-hover:hover {
+    border-color: var(--main-color);
+}
 
 /* Abdullah Elshebrawy: style wrapper and the background */
 .wrapper {
@@ -279,10 +286,6 @@ header.white .navbar .tel-number {
     ); /* edit by Abdullah Elshebrawy: use variables */
 }
 
-.section-title-wrap {
-    background-color: var(--main-color);
-}
-
 .avatar-text {
     font-size: var(--font-size);
 }
@@ -307,33 +310,25 @@ header.white .navbar .tel-number {
 
 /* -------------------------- */
 
-
 /* Abdullah mohammed : services section */
-.services-secthion{
-    padding-top: 120px;
-    
+.services-secthion {
+    padding: var(--main-section-padding);
 }
 
-
-
-
-
-.services-card{
-    background:transparent;
-    border: 2px solid var(--border-color);
+.services-card {
+    background: transparent;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
     margin-bottom: 24px;
     padding: 40px 40px 240px 40px;
-    transition: all 0.5s;
 }
-.services-card p{
+.services-card p {
     margin-bottom: 45px;
 }
 
-.services-price-text{
-    color:#fff ;
+.services-price-text {
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     background: var(--secondary-color);
@@ -342,13 +337,9 @@ header.white .navbar .tel-number {
     overflow: hidden;
     padding: 6px 20px 6px 20px;
     transition: all ease 0.5s;
-     
-
-
 }
 
-
-.color-price-part{
+.color-price-part {
     background-color: var(--main-color);
     position: absolute;
     border-bottom-left-radius: 100%;
@@ -359,32 +350,22 @@ header.white .navbar .tel-number {
     pointer-events: none;
 }
 
-
-.services-card-button{
-
+.services-card-button {
     background-color: transparent;
     color: var(--text-color);
     border: 2px solid #e9eaeb;
     border-radius: 30px;
     font-weight: 700;
     padding: 17px 35px;
-     
 }
 
-
-
-
-
-.services-card-button:hover{
+.services-card-button:hover {
     background-color: var(--main-color);
     color: var(--main-bg-color);
     border-color: var(--main-color);
-
-     
 }
 
-
-.services-icon{
+.services-icon {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     position: absolute;
@@ -396,45 +377,25 @@ header.white .navbar .tel-number {
     transition: all ease 0.5s;
 }
 
-
-.icon-edits{
+.icon-edits {
     font-size: 90px;
     position: relative;
     bottom: 15px;
-
 }
 
-
-
-
-
-.services-card:hover{
-    border-color:var(--main-color);
-}
-
-    
-   
-.services-card:hover .services-icon{
+.services-card:hover .services-icon {
     border-color: var(--main-color);
-    color:white;
+    color: white;
     background-color: var(--main-color);
-
-    
 }
 
-.services-card:hover .services-price-text{
+.services-card:hover .services-price-text {
     background-color: var(--main-color);
-
 }
 
-.services-card:hover .color-price-part{
+.services-card:hover .color-price-part {
     background-color: var(--secondary-color);
-    
 }
-
-
-
-
 
 /* Abdullah Elshebrawy: Create info section */
 .info-sec {
@@ -494,9 +455,11 @@ header.white .navbar .tel-number {
 /* Abdullah Elshebrawy: Create projects section */
 .projects {
     padding: var(--main-section-padding);
+    background-color: var(--main-bg-color);
+
 }
 .projects .box {
-    background-color: var(--main-bg-color);
+    background: white;
     padding: 40px;
     overflow: hidden;
     cursor: pointer;
@@ -504,10 +467,6 @@ header.white .navbar .tel-number {
 .projects .box,
 .projects .box img {
     border-radius: 20px;
-    transition: 0.6s;
-}
-.projects .box:hover {
-    border: 1px solid var(--main-color);
 }
 .projects .box .category-title {
     font-size: 12px;
@@ -524,11 +483,11 @@ header.white .navbar .tel-number {
 .projects .box img {
     border-radius: 20px;
     transform: rotate(15deg) translateY(80px);
+    transition: 0.5s;
 }
 .projects .box:hover img {
     transform: rotate(0deg);
 }
-
 
 /* Abdullah Elshebrawy: Create the gallery sldier */
 .gallery-slider {

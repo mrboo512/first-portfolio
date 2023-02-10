@@ -94,6 +94,9 @@ textarea {
 .border-hover:hover {
     border-color: var(--main-color);
 }
+.section-border {
+    border-top: 3px solid #f0eded;
+}
 
 /* Abdullah Elshebrawy: style wrapper and the background */
 .wrapper {
